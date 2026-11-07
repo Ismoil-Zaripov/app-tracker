@@ -18,4 +18,38 @@
     <string name="theme_system">Tizimga mos</string>
     <string name="theme_light">Yorug\'</string>
     <string name="theme_dark">Qorong\'i</string>
+
+    <!-- Entry form fields -->
+    <string name="entry_date_label">Sana</string>
+    <string name="entry_hours_label">Ishlagan soat</string>
+    <string name="entry_hours_placeholder">masalan 2</string>
+    <string name="entry_tasks_label">Yopilgan task soni</string>
+    <string name="entry_tasks_placeholder">masalan 4</string>
+    <string name="entry_topic_label">Asosiy mavzu</string>
+    <string name="entry_topic_placeholder">masalan Java Streams yoki SQL Index</string>
+    <string name="entry_ratings_title">Kundalik baholash</string>
+    <string name="entry_ratings_subtitle">Energiya, fokus va tushunish ko\'rsatkichlari</string>
+    <string name="entry_understanding_label">Tushunish darajasi</string>
+    <string name="entry_energy_label">Energiya</string>
+    <string name="entry_focus_label">Fokus</string>
+    <string name="entry_win_label">Bugungi eng katta g\'alaba</string>
+    <string name="entry_win_placeholder">Bugun qaysi qiyin masalani hal qildingiz yoki nimani o\'rgandingiz?</string>
+    <string name="entry_difficulty_label">Bugungi eng katta qiyinchilik</string>
+    <string name="entry_difficulty_placeholder">Qayerda to\'siqqa duch keldingiz yoki qanday qiyinchilik bo\'ldi?</string>
+    <string name="entry_save_button">Saqlash</string>
+    <string name="entry_save_changes_button">O\'zgarishlarni saqlash</string>
+    <string name="entry_cancel_changes">O\'zgarishlarni bekor qilish</string>
+    <string name="entry_edit_mode_badge">Mavjud yozuv</string>
+    <string name="entry_edit_mode_label">TAHRIRLASH REJIMI</string>
+    <string name="entry_screen_title_edit">Yozuvni tahrirlash</string>
+    <string name="entry_saved_success">Yozuv saqlandi</string>
+    <string name="entry_last_updated">O\'xirgi o\'zgartirilgan: %s da saqlangan</string>
+    <string name="entry_ratings_range">1 dan 5 gacha</string>
+
+    <!-- Entry validation errors -->
+    <string name="error_hours_required">Soat kiritish shart</string>
+    <string name="error_hours_invalid">Noto\'g\'ri qiymat (0–24)</string>
+    <string name="error_tasks_required">Topshiriq soni kiritish shart</string>
+    <string name="error_tasks_invalid">Topshiriq soni 0 dan katta bo\'lishi kerak</string>
+    <string name="error_topic_required">Mavzu kiritish shart</string>
 </resources>
