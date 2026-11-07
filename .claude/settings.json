@@ -1,0 +1,48 @@
+{
+  "model": "claude-sonnet-4-6",
+  "permissions": {
+    "allow": [
+      "Bash(gradlew.bat*)",
+      "Bash(./gradlew*)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(git init*)",
+      "Bash(git branch*)",
+      "Bash(git checkout*)",
+      "Bash(git stash*)",
+      "Bash(ls*)",
+      "Bash(dir*)",
+      "Bash(mkdir*)",
+      "Bash(cat*)",
+      "Bash(type*)",
+      "Read(C:\\Users\\user\\AndroidStudioProjects\\LearningTracker\\**)",
+      "Edit(C:\\Users\\user\\AndroidStudioProjects\\LearningTracker\\**)",
+      "Write(C:\\Users\\user\\AndroidStudioProjects\\LearningTracker\\**)"
+    ],
+    "deny": [
+      "Read(C:\\Users\\user\\AndroidStudioProjects\\LearningTracker\\build\\**)",
+      "Read(C:\\Users\\user\\AndroidStudioProjects\\LearningTracker\\**/build/**)",
+      "Read(C:\\Users\\user\\AndroidStudioProjects\\LearningTracker\\.gradle\\**)",
+      "Read(C:\\Users\\user\\AndroidStudioProjects\\LearningTracker\\.idea\\**)",
+      "Read(**/*.apk)",
+      "Read(**/*.aab)",
+      "Read(**/*.jar)",
+      "Read(**/*.keystore)",
+      "Read(**/*.jks)",
+      "Read(C:\\Users\\user\\AndroidStudioProjects\\LearningTracker\\local.properties)",
+      "Edit(C:\\Users\\user\\AndroidStudioProjects\\LearningTracker\\local.properties)",
+      "Write(C:\\Users\\user\\AndroidStudioProjects\\LearningTracker\\local.properties)",
+      "Edit(**/*.keystore)",
+      "Edit(**/*.jks)",
+      "Write(**/*.keystore)",
+      "Write(**/*.jks)",
+      "Bash(git push --force*)",
+      "Bash(rm -rf /*)",
+      "Bash(format*)"
+    ]
+  },
+  "autoUpdaterStatus": "disabled"
+}
