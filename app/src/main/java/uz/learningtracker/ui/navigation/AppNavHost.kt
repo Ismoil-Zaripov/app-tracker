@@ -28,9 +28,10 @@ import uz.learningtracker.ui.components.AppTopBar
 import uz.learningtracker.ui.components.ThemeBottomSheet
 import uz.learningtracker.ui.entry.BugungiYozuvScreen
 import uz.learningtracker.ui.entry.EntryViewModel
+import uz.learningtracker.ui.dashboard.DashboardScreen
+import uz.learningtracker.ui.dashboard.DashboardViewModel
 import uz.learningtracker.ui.history.HistoryViewModel
 import uz.learningtracker.ui.history.TarixScreen
-import uz.learningtracker.ui.screens.DashboardScreen
 import uz.learningtracker.ui.screens.HisobotScreen
 import java.time.LocalDate
 
@@ -116,7 +117,22 @@ fun AppNavHost(
                     onCancelEdit = if (fromTarix) ({ navController.popBackStack() }) else null,
                 )
             }
-            composable(AppScreen.Dashboard.route) { DashboardScreen() }
+            composable(AppScreen.Dashboard.route) {
+                val vm: DashboardViewModel = viewModel(
+                    factory = DashboardViewModel.Factory(
+                        observeEntries = container.observeEntries,
+                    ),
+                )
+                DashboardScreen(
+                    viewModel = vm,
+                    onAddEntry = {
+                        navController.navigate(AppScreen.Bugun.route)
+                    },
+                    onEditToday = {
+                        navController.navigate(AppScreen.Bugun.route)
+                    },
+                )
+            }
             composable(AppScreen.Tarix.route) {
                 val vm: HistoryViewModel = viewModel(
                     factory = HistoryViewModel.Factory(

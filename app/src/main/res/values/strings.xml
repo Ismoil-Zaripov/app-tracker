@@ -67,6 +67,45 @@
     <string name="tarix_delete_icon_cd">Yozuvni o\'chirish</string>
     <string name="tarix_filter_clear_cd">Filterni tozalash</string>
 
+    <!-- Dashboard -->
+    <string name="dashboard_streak_label">Joriy streak</string>
+    <string name="dashboard_streak_unit">kun</string>
+    <string name="dashboard_streak_days">%d kun</string>
+    <string name="dashboard_today_section">Bugungi yozuv</string>
+    <string name="dashboard_today_done">Bajarilgan</string>
+    <string name="dashboard_today_not_entered">Kiritilmagan</string>
+    <string name="dashboard_today_description">Bugun hali o\'rganish yozuvi kiritilmagan. Kunlik o\'sish dinamikasini boy bermang!</string>
+    <string name="dashboard_add_entry">Yozuv qo\'shish</string>
+    <string name="dashboard_edit_today">Tahrirlash</string>
+    <string name="dashboard_averages_title">O\'rtacha ko\'rsatkichlar</string>
+    <string name="dashboard_7days">7 kun</string>
+    <string name="dashboard_30days">30 kun</string>
+    <string name="dashboard_energy_label">Energiya</string>
+    <string name="dashboard_focus_label">Fokus</string>
+    <string name="dashboard_understanding_label">Tushunish</string>
+    <string name="dashboard_out_of_5">5 balldan</string>
+    <string name="dashboard_hours_section">Sarflangan vaqt</string>
+    <string name="dashboard_this_week">Bu hafta</string>
+    <string name="dashboard_this_month">Bu oy</string>
+    <string name="dashboard_hours_format">%s soat</string>
+    <string name="dashboard_chart_title">Energiya va fokus dinamikasi</string>
+    <string name="dashboard_chart_subtitle_7">Oxirgi 7 kunlik o\'zgarishlar</string>
+    <string name="dashboard_chart_subtitle_30">Oxirgi 30 kunlik o\'zgarishlar</string>
+    <string name="dashboard_today_label">Bugun</string>
+    <string name="dashboard_edit_today_cd">Bugungi yozuvni tahrirlash</string>
+    <string name="dashboard_add_entry_cd">Yangi yozuv qo\'shish</string>
+    <string name="dashboard_no_data_title">Ma\'lumot yo\'q</string>
+    <string name="dashboard_no_data_subtitle">Statistikani ko\'rish uchun kundalik yozuvlar kiriting.</string>
+    <string-array name="week_day_abbrs">
+        <item>Du</item>
+        <item>Se</item>
+        <item>Chr</item>
+        <item>Pay</item>
+        <item>Jum</item>
+        <item>Sha</item>
+        <item>Yak</item>
+    </string-array>
+
     <!-- Entry validation errors -->
     <string name="error_hours_required">Soat kiritish shart</string>
     <string name="error_hours_invalid">Noto\'g\'ri qiymat (0–24)</string>

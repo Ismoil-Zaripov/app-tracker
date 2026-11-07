@@ -31,13 +31,13 @@
 - [x] Step 7: EmptyState composable
 - [x] Step 8: Unit tests
 
-## Phase 3 — Dashboard `NOT STARTED`
-- [ ] Step 1: GetDashboardStats use case
-- [ ] Step 2: StatCard, SectionCard composables
-- [ ] Step 3: DashboardUiState, DashboardViewModel
-- [ ] Step 4: DashboardScreen (streak, today status, 7/30 toggle, stat cards)
-- [ ] Step 5: LineChart (Canvas)
-- [ ] Step 6: Unit tests for streak and averages
+## Phase 3 — Dashboard `DONE`
+- [x] Step 1: GetDashboardStats use case
+- [x] Step 2: StatCard, SectionCard composables
+- [x] Step 3: DashboardUiState, DashboardViewModel
+- [x] Step 4: DashboardScreen (streak, today status, 7/30 toggle, stat cards)
+- [x] Step 5: LineChart (Canvas)
+- [x] Step 6: Unit tests for streak and averages
 
 ## Phase 4 — Haftalik hisobot `NOT STARTED`
 - [ ] Step 1: GetWeeklyReport use case
