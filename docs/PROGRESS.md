@@ -47,7 +47,7 @@
 - [x] Step 5: BarChart (Canvas)
 - [x] Step 6: Top wins and difficulties section
 - [x] Step 7: EmptyState for empty weeks
-- [ ] Step 8: Unit tests
+- [x] Step 8: Unit tests
 
 ## Phase 5 — Polish `NOT STARTED`
 - [ ] Step 1: ui-reviewer Phase 1 screens (01–03)
