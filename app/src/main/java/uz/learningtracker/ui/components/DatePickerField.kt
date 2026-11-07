@@ -31,6 +31,7 @@ fun DatePickerField(
     onDateChange: (LocalDate) -> Unit,
     modifier: Modifier = Modifier,
     label: String = stringResource(R.string.entry_date_label),
+    isToday: Boolean = false,
 ) {
     var showDialog by remember { mutableStateOf(false) }
 
@@ -41,7 +42,8 @@ fun DatePickerField(
             .toEpochMilli(),
     )
 
-    val formatted = date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG))
+    val base = date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG))
+    val formatted = if (isToday) "$base (Bugun)" else base
 
     LabeledTextField(
         value = formatted,

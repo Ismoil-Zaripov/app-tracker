@@ -28,6 +28,7 @@ class MainActivity : ComponentActivity() {
             }
             LearningTrackerTheme(darkTheme = isDark) {
                 AppNavHost(
+                    container = container,
                     themeMode = themeMode,
                     onThemeChange = { mode ->
                         lifecycleScope.launch { container.themeRepo.setThemeMode(mode) }

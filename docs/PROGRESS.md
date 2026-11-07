@@ -15,7 +15,7 @@
 - [x] Step 1: Domain model, SaveEntry, GetEntryByDate, validation
 - [x] Step 2: RatingSelector, LabeledTextField, DatePickerField
 - [x] Step 3: EntryUiState, EntryViewModel
-- [ ] Step 4: BugungiYozuvScreen (all fields, edit mode)
+- [x] Step 4: BugungiYozuvScreen (all fields, edit mode)
 - [ ] Step 5: Date nav argument, default today
 - [ ] Step 6: Snackbar on success, back navigation
 - [ ] Step 7: Unit tests for validation
