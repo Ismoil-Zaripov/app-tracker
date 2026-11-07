@@ -39,7 +39,7 @@
 - [x] Step 5: LineChart (Canvas)
 - [x] Step 6: Unit tests for streak and averages
 
-## Phase 4 — Haftalik hisobot `IN PROGRESS`
+## Phase 4 — Haftalik hisobot `DONE`
 - [x] Step 1: GetWeeklyReport use case
 - [x] Step 2: WeeklyReportUiState, WeeklyReportViewModel
 - [x] Step 3: WeekSelector composable
