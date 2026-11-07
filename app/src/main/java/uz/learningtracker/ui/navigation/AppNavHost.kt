@@ -32,7 +32,8 @@ import uz.learningtracker.ui.dashboard.DashboardScreen
 import uz.learningtracker.ui.dashboard.DashboardViewModel
 import uz.learningtracker.ui.history.HistoryViewModel
 import uz.learningtracker.ui.history.TarixScreen
-import uz.learningtracker.ui.screens.HisobotScreen
+import uz.learningtracker.ui.report.HisobotScreen
+import uz.learningtracker.ui.report.WeeklyReportViewModel
 import java.time.LocalDate
 
 @Composable
@@ -147,7 +148,17 @@ fun AppNavHost(
                     },
                 )
             }
-            composable(AppScreen.Hisobot.route) { HisobotScreen() }
+            composable(AppScreen.Hisobot.route) {
+                val vm: WeeklyReportViewModel = viewModel(
+                    factory = WeeklyReportViewModel.Factory(
+                        observeEntries = container.observeEntries,
+                    ),
+                )
+                HisobotScreen(
+                    viewModel = vm,
+                    onAddEntry = { navController.navigate(AppScreen.Bugun.route) },
+                )
+            }
         }
     }
 

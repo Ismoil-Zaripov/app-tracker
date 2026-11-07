@@ -42,11 +42,11 @@
 ## Phase 4 — Haftalik hisobot `IN PROGRESS`
 - [x] Step 1: GetWeeklyReport use case
 - [x] Step 2: WeeklyReportUiState, WeeklyReportViewModel
-- [ ] Step 3: WeekSelector composable
-- [ ] Step 4: Summary cards
-- [ ] Step 5: BarChart (Canvas)
-- [ ] Step 6: Top wins and difficulties section
-- [ ] Step 7: EmptyState for empty weeks
+- [x] Step 3: WeekSelector composable
+- [x] Step 4: Summary cards
+- [x] Step 5: BarChart (Canvas)
+- [x] Step 6: Top wins and difficulties section
+- [x] Step 7: EmptyState for empty weeks
 - [ ] Step 8: Unit tests
 
 ## Phase 5 — Polish `NOT STARTED`
