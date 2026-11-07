@@ -9,6 +9,7 @@ import uz.learningtracker.domain.usecase.DeleteEntry
 import uz.learningtracker.domain.usecase.GetDashboardStats
 import uz.learningtracker.domain.usecase.GetEntryByDate
 import uz.learningtracker.domain.usecase.ObserveEntries
+import uz.learningtracker.domain.usecase.GetWeeklyReport
 import uz.learningtracker.domain.usecase.SaveEntry
 
 class AppContainer(context: Context) {
@@ -22,4 +23,5 @@ class AppContainer(context: Context) {
     val observeEntries = ObserveEntries(dailyRepository)
     val deleteEntry = DeleteEntry(dailyRepository)
     val getDashboardStats = GetDashboardStats(dailyRepository)
+    val getWeeklyReport = GetWeeklyReport(dailyRepository)
 }

@@ -39,9 +39,9 @@
 - [x] Step 5: LineChart (Canvas)
 - [x] Step 6: Unit tests for streak and averages
 
-## Phase 4 — Haftalik hisobot `NOT STARTED`
-- [ ] Step 1: GetWeeklyReport use case
-- [ ] Step 2: WeeklyReportUiState, WeeklyReportViewModel
+## Phase 4 — Haftalik hisobot `IN PROGRESS`
+- [x] Step 1: GetWeeklyReport use case
+- [x] Step 2: WeeklyReportUiState, WeeklyReportViewModel
 - [ ] Step 3: WeekSelector composable
 - [ ] Step 4: Summary cards
 - [ ] Step 5: BarChart (Canvas)

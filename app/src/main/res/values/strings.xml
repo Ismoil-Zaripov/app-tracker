@@ -106,6 +106,42 @@
         <item>Yak</item>
     </string-array>
 
+    <!-- Weekly report -->
+    <string name="hisobot_total_hours">Jami vaqt</string>
+    <string name="hisobot_hours_unit">%s soat</string>
+    <string name="hisobot_total_tasks">Bajarilgan vazifa</string>
+    <string name="hisobot_tasks_unit">%d ta</string>
+    <string name="hisobot_avg_energy">O\'rtacha energiya</string>
+    <string name="hisobot_avg_focus">O\'rtacha fokus</string>
+    <string name="hisobot_avg_understanding">O\'rtacha tushunish</string>
+    <string name="hisobot_out_of_5">/ 5</string>
+    <string name="hisobot_summary_title">Asosiy ko\'rsatkichlar</string>
+    <string name="hisobot_chart_title">Kunlik sarflangan vaqt</string>
+    <string name="hisobot_chart_avg">O\'rtacha: %s soat</string>
+    <string name="hisobot_wins_title">Eng yaxshi g\'alabalar</string>
+    <string name="hisobot_difficulties_title">Eng katta qiyinchiliklar</string>
+    <string name="hisobot_empty_title">Ushbu haftada yozuvlar mavjud emas</string>
+    <string name="hisobot_empty_subtitle">Tanlangan hafta uchun hech qanday o\'rganish yoki energiya yozuvlari kiritilmagan. O\'tgan kunlar uchun yozuv qo\'shishingiz mumkin.</string>
+    <string name="hisobot_add_entry">+ Yozuv qo\'shish</string>
+    <string name="hisobot_go_to_current">Joriy haftaga o\'tish</string>
+    <string name="hisobot_current_week_badge">Joriy hafta</string>
+    <string name="hisobot_prev_week_cd">Oldingi hafta</string>
+    <string name="hisobot_next_week_cd">Keyingi hafta</string>
+    <string-array name="month_names_uz">
+        <item>Yanvar</item>
+        <item>Fevral</item>
+        <item>Mart</item>
+        <item>Aprel</item>
+        <item>May</item>
+        <item>Iyun</item>
+        <item>Iyul</item>
+        <item>Avgust</item>
+        <item>Sentabr</item>
+        <item>Oktabr</item>
+        <item>Noyabr</item>
+        <item>Dekabr</item>
+    </string-array>
+
     <!-- Entry validation errors -->
     <string name="error_hours_required">Soat kiritish shart</string>
     <string name="error_hours_invalid">Noto\'g\'ri qiymat (0–24)</string>
