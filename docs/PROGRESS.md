@@ -17,7 +17,7 @@
 - [x] Step 3: EntryUiState, EntryViewModel
 - [x] Step 4: BugungiYozuvScreen (all fields, edit mode)
 - [x] Step 5: Date nav argument, default today
-- [ ] Step 6: Snackbar on success, back navigation
+- [x] Step 6: Snackbar on success, back navigation
 - [ ] Step 7: Unit tests for validation
 - [ ] Step 8: Unit tests for SaveEntry upsert
 
