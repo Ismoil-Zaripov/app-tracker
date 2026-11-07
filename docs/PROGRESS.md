@@ -18,7 +18,7 @@
 - [x] Step 4: BugungiYozuvScreen (all fields, edit mode)
 - [x] Step 5: Date nav argument, default today
 - [x] Step 6: Snackbar on success, back navigation
-- [ ] Step 7: Unit tests for validation
+- [x] Step 7: Unit tests for validation
 - [ ] Step 8: Unit tests for SaveEntry upsert
 
 ## Phase 2 — Tarix `NOT STARTED`
