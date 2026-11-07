@@ -13,7 +13,7 @@
 
 ## Phase 1 — Bugungi yozuv `IN PROGRESS`
 - [x] Step 1: Domain model, SaveEntry, GetEntryByDate, validation
-- [ ] Step 2: RatingSelector, LabeledTextField, DatePickerField
+- [x] Step 2: RatingSelector, LabeledTextField, DatePickerField
 - [ ] Step 3: EntryUiState, EntryViewModel
 - [ ] Step 4: BugungiYozuvScreen (all fields, edit mode)
 - [ ] Step 5: Date nav argument, default today
