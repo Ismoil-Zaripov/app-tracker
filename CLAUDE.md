@@ -16,17 +16,18 @@
 - See skills: `compose-screen`, `room-data-layer`, `uzbek-strings`, `verify-task`.
 
 ## Workflow
-- Read `docs/PROGRESS.md` first; resume from first unfinished task in `docs/TASKS.md`.
-- After each task: build → fix → update `docs/PROGRESS.md` → `git commit "task N: title"`.
+- One phase per session. At session start: read `docs/PROGRESS.md`, find first phase not DONE, read `docs/DESIGN.md` and that phase's screens (see TASKS.md), start from first unfinished step.
+- After each step: build → fix → update `docs/PROGRESS.md` → `git commit "phase N step M: title"` → continue immediately.
+- Phase done: build + tests → mark DONE in `docs/PROGRESS.md` → `git commit "phase N done"` → print `"PHASE N DONE. Run /clear, then start phase N+1."` → STOP.
 
 ## Token rules
 - Never read `build/`, `.gradle/`, `.idea/`, `*.png`, `*.apk` unless a task explicitly requires it.
-- `docs/screens/` images: only via `ui-reviewer` subagent or when building that exact screen.
+- `docs/screens/` images: read only during the phase listed for them in `docs/TASKS.md`.
 - Prefer targeted Grep/Read with line ranges over whole-file reads; do not re-read files just written.
 - Keep chat output short; no large code blocks in chat.
 
 ## Docs
 - `docs/DESIGN.md` — visual spec and component guide
-- `docs/TASKS.md` — ordered task list
-- `docs/PROGRESS.md` — per-task completion log
+- `docs/TASKS.md` — ordered task list with phase rules
+- `docs/PROGRESS.md` — per-phase completion log
 - `docs/DECISIONS.md` — architectural decisions
