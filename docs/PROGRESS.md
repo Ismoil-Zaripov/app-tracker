@@ -21,15 +21,15 @@
 - [x] Step 7: Unit tests for validation
 - [x] Step 8: Unit tests for SaveEntry upsert
 
-## Phase 2 — Tarix `NOT STARTED`
-- [ ] Step 1: ObserveEntries, DeleteEntry use cases
-- [ ] Step 2: HistoryUiState, HistoryViewModel
-- [ ] Step 3: TarixScreen list with EntryListItem
-- [ ] Step 4: Date-range filter with clear chip
-- [ ] Step 5: Tap to edit (navigate to entry screen)
-- [ ] Step 6: ConfirmDeleteDialog and delete
-- [ ] Step 7: EmptyState composable
-- [ ] Step 8: Unit tests
+## Phase 2 — Tarix `DONE`
+- [x] Step 1: ObserveEntries, DeleteEntry use cases
+- [x] Step 2: HistoryUiState, HistoryViewModel
+- [x] Step 3: TarixScreen list with EntryListItem
+- [x] Step 4: Date-range filter with clear chip
+- [x] Step 5: Tap to edit (navigate to entry screen)
+- [x] Step 6: ConfirmDeleteDialog and delete
+- [x] Step 7: EmptyState composable
+- [x] Step 8: Unit tests
 
 ## Phase 3 — Dashboard `NOT STARTED`
 - [ ] Step 1: GetDashboardStats use case

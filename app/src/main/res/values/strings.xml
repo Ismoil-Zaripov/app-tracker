@@ -46,6 +46,27 @@
     <string name="entry_last_updated">O\'xirgi o\'zgartirilgan: %s da saqlangan</string>
     <string name="entry_ratings_range">1 dan 5 gacha</string>
 
+    <!-- Tarix screen -->
+    <string name="tarix_filter_label">Sana bo\'yicha filter</string>
+    <string name="tarix_total_entries">Jami: %d ta yozuv</string>
+    <string name="tarix_sort_newest">Yangisi oldin</string>
+    <string name="tarix_today_badge">Bugun</string>
+    <string name="tarix_edit">Tahrirlash</string>
+    <string name="tarix_delete">O\'chirish</string>
+    <string name="tarix_delete_dialog_title">Yozuvni o\'chirmoqchimisiz?</string>
+    <string name="tarix_delete_dialog_text">%1$s sanasidagi \"%2$s\" yozuvi va unga tegishli barcha statistik ma\'lumotlar o\'chiriladi. Bu amalni ortga qaytarib bo\'lmaydi.</string>
+    <string name="tarix_cancel">Bekor qilish</string>
+    <string name="tarix_empty_title">Hozircha yozuvlar yo\'q</string>
+    <string name="tarix_empty_subtitle">Tanlangan davr uchun hech qanday o\'rganish yozuvi topilmadi yoki hali birorta kunlik tahlil kiritilmagan.</string>
+    <string name="tarix_add_entry">Yangi yozuv kiritish</string>
+    <string name="tarix_clear_filter">Filtrni tozalash</string>
+    <string name="tarix_hours_format">%s soat</string>
+    <string name="tarix_tasks_format">%d ta vazifa</string>
+    <string name="tarix_rating_format">%1$d/5</string>
+    <string name="tarix_saved_at">%1$s, %2$s da yakunlandi</string>
+    <string name="tarix_delete_icon_cd">Yozuvni o\'chirish</string>
+    <string name="tarix_filter_clear_cd">Filterni tozalash</string>
+
     <!-- Entry validation errors -->
     <string name="error_hours_required">Soat kiritish shart</string>
     <string name="error_hours_invalid">Noto\'g\'ri qiymat (0–24)</string>

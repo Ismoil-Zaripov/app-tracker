@@ -28,9 +28,10 @@ import uz.learningtracker.ui.components.AppTopBar
 import uz.learningtracker.ui.components.ThemeBottomSheet
 import uz.learningtracker.ui.entry.BugungiYozuvScreen
 import uz.learningtracker.ui.entry.EntryViewModel
+import uz.learningtracker.ui.history.HistoryViewModel
+import uz.learningtracker.ui.history.TarixScreen
 import uz.learningtracker.ui.screens.DashboardScreen
 import uz.learningtracker.ui.screens.HisobotScreen
-import uz.learningtracker.ui.screens.TarixScreen
 import java.time.LocalDate
 
 @Composable
@@ -116,7 +117,20 @@ fun AppNavHost(
                 )
             }
             composable(AppScreen.Dashboard.route) { DashboardScreen() }
-            composable(AppScreen.Tarix.route) { TarixScreen() }
+            composable(AppScreen.Tarix.route) {
+                val vm: HistoryViewModel = viewModel(
+                    factory = HistoryViewModel.Factory(
+                        observeEntries = container.observeEntries,
+                        deleteEntry = container.deleteEntry,
+                    ),
+                )
+                TarixScreen(
+                    viewModel = vm,
+                    onEditEntry = { date ->
+                        navController.navigate(AppScreen.Bugun.withDate(date.toString()))
+                    },
+                )
+            }
             composable(AppScreen.Hisobot.route) { HisobotScreen() }
         }
     }
