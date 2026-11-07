@@ -51,10 +51,10 @@ fun AppNavHost(
     val currentRoute = backStackEntry?.destination?.route
 
     val screenTitle = when {
-        currentRoute?.startsWith(AppScreen.Bugun.BASE) == true -> stringResource(R.string.screen_bugun)
-        currentRoute == AppScreen.Dashboard.route -> stringResource(R.string.screen_dashboard)
-        currentRoute == AppScreen.Tarix.route -> stringResource(R.string.screen_tarix)
-        currentRoute == AppScreen.Hisobot.route -> stringResource(R.string.screen_hisobot)
+        currentRoute?.startsWith(AppScreen.Bugun.BASE) == true -> stringResource(R.string.nav_bugun)
+        currentRoute == AppScreen.Dashboard.route -> stringResource(R.string.nav_dashboard)
+        currentRoute == AppScreen.Tarix.route -> stringResource(R.string.nav_tarix)
+        currentRoute == AppScreen.Hisobot.route -> stringResource(R.string.nav_hisobot)
         else -> stringResource(R.string.app_name)
     }
 

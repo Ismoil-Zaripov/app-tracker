@@ -15,9 +15,11 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.AutoStories
 import androidx.compose.material.icons.outlined.CheckCircle
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.SuggestionChip
@@ -47,9 +49,9 @@ import java.time.format.DateTimeFormatter
 @Composable
 fun BugungiYozuvScreen(
     viewModel: EntryViewModel,
+    modifier: Modifier = Modifier,
     onSaveSuccess: () -> Unit,
     onCancelEdit: (() -> Unit)? = null,
-    modifier: Modifier = Modifier,
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
 
@@ -123,6 +125,8 @@ fun BugungiYozuvScreen(
             )
 
             RatingsCard(state = state, viewModel = viewModel)
+
+            ReflectionHeader()
 
             LabeledTextField(
                 value = state.biggestWin,
@@ -200,6 +204,28 @@ private fun EditModeHeader(lastUpdatedAt: Long?) {
                 iconContentColor = MaterialTheme.colorScheme.onSecondaryContainer,
             ),
         )
+    }
+}
+
+@Composable
+private fun ReflectionHeader() {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(Spacing.sm),
+        modifier = Modifier.fillMaxWidth(),
+    ) {
+        HorizontalDivider(modifier = Modifier.weight(1f))
+        Icon(
+            imageVector = Icons.Outlined.AutoStories,
+            contentDescription = null,
+            tint = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+        Text(
+            text = stringResource(R.string.entry_reflection_title),
+            style = MaterialTheme.typography.titleSmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+        HorizontalDivider(modifier = Modifier.weight(1f))
     }
 }
 

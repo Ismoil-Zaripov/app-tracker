@@ -108,13 +108,17 @@ private fun TarixContent(
         )
 
         if (state.entries.isEmpty() && !state.isLoading) {
+            val isFiltered = state.filterFrom != null || state.filterTo != null
             EmptyState(
                 icon = Icons.AutoMirrored.Outlined.MenuBook,
                 title = stringResource(R.string.tarix_empty_title),
                 subtitle = stringResource(R.string.tarix_empty_subtitle),
                 modifier = Modifier.weight(1f),
                 action = {
-                    if (state.filterFrom != null || state.filterTo != null) {
+                    Button(onClick = { onEditEntry(LocalDate.now()) }) {
+                        Text(stringResource(R.string.tarix_add_entry))
+                    }
+                    if (isFiltered) {
                         TextButton(onClick = onClearFilter) {
                             Icon(
                                 Icons.Outlined.Close,
@@ -123,10 +127,6 @@ private fun TarixContent(
                             )
                             Spacer(Modifier.width(4.dp))
                             Text(stringResource(R.string.tarix_clear_filter))
-                        }
-                    } else {
-                        Button(onClick = { onEditEntry(LocalDate.now()) }) {
-                            Text(stringResource(R.string.tarix_add_entry))
                         }
                     }
                 },
@@ -205,16 +205,13 @@ private fun FilterRow(
                 },
                 trailingIcon = if (isFiltered) {
                     {
-                        IconButton(
-                            onClick = onClearFilter,
-                            modifier = Modifier.size(FilterChipDefaults.IconSize),
-                        ) {
-                            Icon(
-                                Icons.Outlined.Close,
-                                contentDescription = stringResource(R.string.tarix_filter_clear_cd),
-                                modifier = Modifier.size(FilterChipDefaults.IconSize),
-                            )
-                        }
+                        Icon(
+                            Icons.Outlined.Close,
+                            contentDescription = stringResource(R.string.tarix_filter_clear_cd),
+                            modifier = Modifier
+                                .size(FilterChipDefaults.IconSize)
+                                .clickable { onClearFilter() },
+                        )
                     }
                 } else null,
             )
@@ -284,7 +281,7 @@ private fun EntryListItem(
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
                 }
-                IconButton(onClick = onDelete, modifier = Modifier.size(40.dp)) {
+                IconButton(onClick = onDelete) {
                     Icon(
                         Icons.Outlined.Delete,
                         contentDescription = stringResource(R.string.tarix_delete_icon_cd),

@@ -7,12 +7,6 @@
     <string name="nav_tarix">Tarix</string>
     <string name="nav_hisobot">Hisobot</string>
 
-    <!-- Screen titles -->
-    <string name="screen_bugun">Bugungi yozuv</string>
-    <string name="screen_dashboard">Dashboard</string>
-    <string name="screen_tarix">Tarix</string>
-    <string name="screen_hisobot">Haftalik hisobot</string>
-
     <!-- Theme options -->
     <string name="theme_label">Mavzu</string>
     <string name="theme_system">Tizimga mos</string>
@@ -32,6 +26,7 @@
     <string name="entry_understanding_label">Tushunish darajasi</string>
     <string name="entry_energy_label">Energiya</string>
     <string name="entry_focus_label">Fokus</string>
+    <string name="entry_reflection_title">Refleksiya va Xulosalar</string>
     <string name="entry_win_label">Bugungi eng katta g\'alaba</string>
     <string name="entry_win_placeholder">Bugun qaysi qiyin masalani hal qildingiz yoki nimani o\'rgandingiz?</string>
     <string name="entry_difficulty_label">Bugungi eng katta qiyinchilik</string>
@@ -41,7 +36,6 @@
     <string name="entry_cancel_changes">O\'zgarishlarni bekor qilish</string>
     <string name="entry_edit_mode_badge">Mavjud yozuv</string>
     <string name="entry_edit_mode_label">TAHRIRLASH REJIMI</string>
-    <string name="entry_screen_title_edit">Yozuvni tahrirlash</string>
     <string name="entry_saved_success">Yozuv saqlandi</string>
     <string name="entry_last_updated">O\'xirgi o\'zgartirilgan: %s da saqlangan</string>
     <string name="entry_ratings_range">1 dan 5 gacha</string>
@@ -49,8 +43,7 @@
     <!-- Tarix screen -->
     <string name="tarix_filter_label">Sana bo\'yicha filter</string>
     <string name="tarix_total_entries">Jami: %d ta yozuv</string>
-    <string name="tarix_sort_newest">Yangisi oldin</string>
-    <string name="tarix_today_badge">Bugun</string>
+<string name="tarix_today_badge">Bugun</string>
     <string name="tarix_edit">Tahrirlash</string>
     <string name="tarix_delete">O\'chirish</string>
     <string name="tarix_delete_dialog_title">Yozuvni o\'chirmoqchimisiz?</string>
@@ -70,7 +63,6 @@
     <!-- Dashboard -->
     <string name="dashboard_streak_label">Joriy streak</string>
     <string name="dashboard_streak_unit">kun</string>
-    <string name="dashboard_streak_days">%d kun</string>
     <string name="dashboard_today_section">Bugungi yozuv</string>
     <string name="dashboard_today_done">Bajarilgan</string>
     <string name="dashboard_today_not_entered">Kiritilmagan</string>
@@ -84,7 +76,6 @@
     <string name="dashboard_focus_label">Fokus</string>
     <string name="dashboard_understanding_label">Tushunish</string>
     <string name="dashboard_out_of_5">5 balldan</string>
-    <string name="dashboard_hours_section">Sarflangan vaqt</string>
     <string name="dashboard_this_week">Bu hafta</string>
     <string name="dashboard_this_month">Bu oy</string>
     <string name="dashboard_hours_format">%s soat</string>
@@ -93,7 +84,6 @@
     <string name="dashboard_chart_subtitle_30">Oxirgi 30 kunlik o\'zgarishlar</string>
     <string name="dashboard_today_label">Bugun</string>
     <string name="dashboard_edit_today_cd">Bugungi yozuvni tahrirlash</string>
-    <string name="dashboard_add_entry_cd">Yangi yozuv qo\'shish</string>
     <string name="dashboard_no_data_title">Ma\'lumot yo\'q</string>
     <string name="dashboard_no_data_subtitle">Statistikani ko\'rish uchun kundalik yozuvlar kiriting.</string>
     <string-array name="week_day_abbrs">
@@ -124,7 +114,6 @@
     <string name="hisobot_empty_subtitle">Tanlangan hafta uchun hech qanday o\'rganish yoki energiya yozuvlari kiritilmagan. O\'tgan kunlar uchun yozuv qo\'shishingiz mumkin.</string>
     <string name="hisobot_add_entry">+ Yozuv qo\'shish</string>
     <string name="hisobot_go_to_current">Joriy haftaga o\'tish</string>
-    <string name="hisobot_current_week_badge">Joriy hafta</string>
     <string name="hisobot_prev_week_cd">Oldingi hafta</string>
     <string name="hisobot_next_week_cd">Keyingi hafta</string>
     <string-array name="month_names_uz">

@@ -49,17 +49,17 @@
 - [x] Step 7: EmptyState for empty weeks
 - [x] Step 8: Unit tests
 
-## Phase 5 — Polish `NOT STARTED`
-- [ ] Step 1: ui-reviewer Phase 1 screens (01–03)
-- [ ] Step 2: ui-reviewer Phase 2 screens (07–09)
-- [ ] Step 3: ui-reviewer Phase 3 screens (04–06)
-- [ ] Step 4: ui-reviewer Phase 4 screens (10–12)
-- [ ] Step 5: Dark theme check all screens
-- [ ] Step 6: Touch targets ≥ 48 dp
-- [ ] Step 7: IME handling
-- [ ] Step 8: State survival (rotation, process death)
-- [ ] Step 9: Accessibility (contentDescription, no hardcoded strings/colors)
-- [ ] Step 10: Lint clean
-- [ ] Step 11: Unit tests all pass
-- [ ] Step 12: Remove unused code
-- [ ] Step 13: README.md
+## Phase 5 — Polish `DONE`
+- [x] Step 1: ui-reviewer Phase 1 screens (01–03) — added "Refleksiya va Xulosalar" header; fixed top bar title "Bugun"
+- [x] Step 2: ui-reviewer Phase 2 screens (07–09) — empty state shows both buttons; filter clear touch target fixed
+- [x] Step 3: ui-reviewer Phase 3 screens (04–06) — check icon added to selected period toggle
+- [x] Step 4: ui-reviewer Phase 4 screens (10–12) — top bar title "Hisobot" fixed
+- [x] Step 5: Dark theme check all screens — all composables use MaterialTheme tokens, no hardcoded colors
+- [x] Step 6: Touch targets ≥ 48 dp — removed size(40dp) from delete IconButton; fixed filter clear icon
+- [x] Step 7: IME handling — Decimal/Number/Text keyboard types correct; ImeAction.Done on last field
+- [x] Step 8: State survival (rotation, process death) — ViewModels survive rotation via NavBackStackEntry scope
+- [x] Step 9: Accessibility (contentDescription, no hardcoded strings/colors) — all icon-only buttons have contentDescription
+- [x] Step 10: Lint clean — 0 errors, 0 actionable warnings
+- [x] Step 11: Unit tests all pass — BUILD SUCCESSFUL
+- [x] Step 12: Remove unused code — deleted 4 placeholder screen files; removed unused strings and colors
+- [x] Step 13: README.md

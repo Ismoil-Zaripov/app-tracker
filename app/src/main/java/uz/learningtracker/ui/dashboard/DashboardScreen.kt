@@ -14,10 +14,12 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Add
+import androidx.compose.material.icons.outlined.Check
 import androidx.compose.material.icons.outlined.CheckCircle
 import androidx.compose.material.icons.outlined.Edit
 import androidx.compose.material.icons.outlined.Insights
@@ -170,7 +172,7 @@ private fun TodayStatusCard(
     onEditToday: () -> Unit,
 ) {
     val today = LocalDate.now()
-    val formatter = DateTimeFormatter.ofPattern("d-MMM, yyyy", Locale("uz"))
+    val formatter = DateTimeFormatter.ofPattern("d-MMM, yyyy", Locale.forLanguageTag("uz"))
 
     Card(
         modifier = Modifier.fillMaxWidth(),
@@ -361,14 +363,23 @@ private fun PeriodToggle(selectedPeriod: Int, onSelect: (Int) -> Unit) {
 @Composable
 private fun PeriodToggleItem(label: String, selected: Boolean, onClick: () -> Unit) {
     val colorScheme = MaterialTheme.colorScheme
-    Box(
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(4.dp),
         modifier = Modifier
             .clip(MaterialTheme.shapes.extraSmall)
             .background(if (selected) colorScheme.secondaryContainer else colorScheme.surfaceContainerHighest)
             .clickable { onClick() }
             .padding(horizontal = 10.dp, vertical = 6.dp),
-        contentAlignment = Alignment.Center,
     ) {
+        if (selected) {
+            Icon(
+                imageVector = Icons.Outlined.Check,
+                contentDescription = null,
+                modifier = Modifier.size(14.dp),
+                tint = colorScheme.onSecondaryContainer,
+            )
+        }
         Text(
             text = label,
             style = MaterialTheme.typography.labelMedium,
@@ -412,7 +423,7 @@ private fun MetricRingItem(
                     size = arcSize,
                 )
             }
-            val formatted = if (value == 0.0) "-" else String.format("%.1f", value)
+            val formatted = if (value == 0.0) "-" else String.format(Locale.US, "%.1f", value)
             Text(
                 text = formatted,
                 style = MaterialTheme.typography.titleMedium,
@@ -440,10 +451,10 @@ private fun HoursRow(stats: DashboardStats) {
         horizontalArrangement = Arrangement.spacedBy(12.dp),
     ) {
         val weekHours = stats.hoursThisWeek.let {
-            if (it == it.toLong().toDouble()) it.toLong().toString() else String.format("%.1f", it)
+            if (it == it.toLong().toDouble()) it.toLong().toString() else String.format(Locale.US, "%.1f", it)
         }
         val monthHours = stats.hoursThisMonth.let {
-            if (it == it.toLong().toDouble()) it.toLong().toString() else String.format("%.1f", it)
+            if (it == it.toLong().toDouble()) it.toLong().toString() else String.format(Locale.US, "%.1f", it)
         }
         StatCard(
             label = stringResource(R.string.dashboard_this_week),
