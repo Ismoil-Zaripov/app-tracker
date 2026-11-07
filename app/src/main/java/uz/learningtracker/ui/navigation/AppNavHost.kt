@@ -13,10 +13,12 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import kotlinx.coroutines.launch
 import uz.learningtracker.AppContainer
 import uz.learningtracker.R
@@ -46,7 +48,7 @@ fun AppNavHost(
     val currentRoute = backStackEntry?.destination?.route
 
     val screenTitle = when {
-        currentRoute == AppScreen.Bugun.route -> stringResource(R.string.screen_bugun)
+        currentRoute?.startsWith(AppScreen.Bugun.BASE) == true -> stringResource(R.string.screen_bugun)
         currentRoute == AppScreen.Dashboard.route -> stringResource(R.string.screen_dashboard)
         currentRoute == AppScreen.Tarix.route -> stringResource(R.string.screen_tarix)
         currentRoute == AppScreen.Hisobot.route -> stringResource(R.string.screen_hisobot)
@@ -72,7 +74,21 @@ fun AppNavHost(
             startDestination = AppScreen.Bugun.route,
             modifier = Modifier.padding(innerPadding),
         ) {
-            composable(AppScreen.Bugun.route) {
+            composable(
+                route = AppScreen.Bugun.route,
+                arguments = listOf(
+                    navArgument("date") {
+                        type = NavType.StringType
+                        nullable = true
+                        defaultValue = null
+                    },
+                ),
+            ) { backStack ->
+                val dateArg = backStack.arguments?.getString("date")
+                val initialDate = dateArg?.let { runCatching { LocalDate.parse(it) }.getOrNull() }
+                    ?: LocalDate.now()
+                val fromTarix = dateArg != null
+
                 val hoursRequired = stringResource(R.string.error_hours_required)
                 val hoursInvalid = stringResource(R.string.error_hours_invalid)
                 val tasksRequired = stringResource(R.string.error_tasks_required)
@@ -82,7 +98,7 @@ fun AppNavHost(
                     factory = EntryViewModel.Factory(
                         saveEntry = container.saveEntry,
                         getEntryByDate = container.getEntryByDate,
-                        initialDate = LocalDate.now(),
+                        initialDate = initialDate,
                         hoursRequiredError = hoursRequired,
                         hoursInvalidError = hoursInvalid,
                         tasksRequiredError = tasksRequired,
@@ -94,7 +110,9 @@ fun AppNavHost(
                     viewModel = vm,
                     onSaveSuccess = {
                         scope.launch { snackbarHostState.showSnackbar(savedMsg) }
+                        if (fromTarix) navController.popBackStack()
                     },
+                    onCancelEdit = if (fromTarix) ({ navController.popBackStack() }) else null,
                 )
             }
             composable(AppScreen.Dashboard.route) { DashboardScreen() }
