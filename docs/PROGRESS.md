@@ -1,15 +1,15 @@
 # Progress
 
-## Phase 0 — Foundation `NOT STARTED`
-- [ ] Step 1: Gradle, version catalog, dependencies
-- [ ] Step 2: Package structure, AppContainer
-- [ ] Step 3: Theme (M3 colors, typography, shapes)
-- [ ] Step 4: DataStore theme preference
-- [ ] Step 5: strings.xml base
-- [ ] Step 6: Navigation shell (NavHost, bottom nav, top bar, theme sheet)
-- [ ] Step 7: Placeholder screens
-- [ ] Step 8: Room (entity, DAO, database)
-- [ ] Step 9: Repository interface and impl
+## Phase 0 — Foundation `DONE`
+- [x] Step 1: Gradle, version catalog, dependencies
+- [x] Step 2: Package structure, AppContainer
+- [x] Step 3: Theme (M3 colors, typography, shapes)
+- [x] Step 4: DataStore theme preference
+- [x] Step 5: strings.xml base
+- [x] Step 6: Navigation shell (NavHost, bottom nav, top bar, theme sheet)
+- [x] Step 7: Placeholder screens
+- [x] Step 8: Room (entity, DAO, database)
+- [x] Step 9: Repository interface and impl
 
 ## Phase 1 — Bugungi yozuv `NOT STARTED`
 - [ ] Step 1: Domain model, SaveEntry, GetEntryByDate, validation

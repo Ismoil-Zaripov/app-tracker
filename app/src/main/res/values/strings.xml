@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Learning Tracker</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_bugun">Bugun</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_tarix">Tarix</string>
+    <string name="nav_hisobot">Hisobot</string>
+
+    <!-- Screen titles -->
+    <string name="screen_bugun">Bugungi yozuv</string>
+    <string name="screen_dashboard">Dashboard</string>
+    <string name="screen_tarix">Tarix</string>
+    <string name="screen_hisobot">Haftalik hisobot</string>
+
+    <!-- Theme options -->
+    <string name="theme_label">Mavzu</string>
+    <string name="theme_system">Tizimga mos</string>
+    <string name="theme_light">Yorug\'</string>
+    <string name="theme_dark">Qorong\'i</string>
 </resources>
