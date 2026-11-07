@@ -11,7 +11,7 @@
 - [x] Step 8: Room (entity, DAO, database)
 - [x] Step 9: Repository interface and impl
 
-## Phase 1 — Bugungi yozuv `IN PROGRESS`
+## Phase 1 — Bugungi yozuv `DONE`
 - [x] Step 1: Domain model, SaveEntry, GetEntryByDate, validation
 - [x] Step 2: RatingSelector, LabeledTextField, DatePickerField
 - [x] Step 3: EntryUiState, EntryViewModel
@@ -19,7 +19,7 @@
 - [x] Step 5: Date nav argument, default today
 - [x] Step 6: Snackbar on success, back navigation
 - [x] Step 7: Unit tests for validation
-- [ ] Step 8: Unit tests for SaveEntry upsert
+- [x] Step 8: Unit tests for SaveEntry upsert
 
 ## Phase 2 — Tarix `NOT STARTED`
 - [ ] Step 1: ObserveEntries, DeleteEntry use cases
